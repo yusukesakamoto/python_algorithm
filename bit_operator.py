@@ -4,7 +4,7 @@ b = 0b10001100
 print("AND",bin(a&b))
 print("OR",bin(a|b))
 print("XOR",bin(a^b)) #^=サーカムフレックスあるいはキャレット
-print("~0",~0)  #~=チルダ
+print("~0",~0)  #~=チルダ　補数に使う
 print("~1",~1)
 print("~-1",~-1)
 print("~-2",~-2)
