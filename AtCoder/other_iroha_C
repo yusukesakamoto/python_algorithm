@@ -1,0 +1,20 @@
+
+#This code was not written by me.
+
+n,k=map(int,input().split())
+
+lst=input().split()
+#print(lst)
+
+for i in range(n,100000):
+    str1=str(i)
+    hit = 0
+    for j in lst:
+        if j in str1:
+           hit = 1
+           break
+    if hit==0:
+        print(i)
+        break
+    else:
+        continue
