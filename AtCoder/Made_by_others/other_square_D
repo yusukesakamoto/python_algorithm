@@ -1,0 +1,13 @@
+M=10**9+7
+#h,w,a,b=map(int,input().split())
+h,w,a,b=100000,100000,44444,55555
+F=[1]
+poi = 0
+print(F)
+for i in range(h+w):
+    F+=[F[i]*(i+1)%M]
+    if poi < 20:
+        print(F)
+        poi += 1
+c=lambda n,r:F[n]*pow(F[r]*F[n-r],-1,M)
+print(sum(c(h+~a+i,i)*c(a+w-2-i,a-1) for i in range(b,w))%M)
